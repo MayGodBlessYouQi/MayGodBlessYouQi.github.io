@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>跨域的方法 | 梁永琪的个人博客</title>
+    <meta name="description" content="请里面走走,空调开发~">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.dd0d74e3.css" as="style"><link rel="preload" href="/assets/js/app.959a054e.js" as="script"><link rel="preload" href="/assets/js/2.ed44bfc9.js" as="script"><link rel="preload" href="/assets/js/15.83ca4402.js" as="script"><link rel="prefetch" href="/assets/js/10.be3cfa1b.js"><link rel="prefetch" href="/assets/js/11.1a8fadfb.js"><link rel="prefetch" href="/assets/js/12.bbc96bf2.js"><link rel="prefetch" href="/assets/js/13.1e557f35.js"><link rel="prefetch" href="/assets/js/14.843e03f7.js"><link rel="prefetch" href="/assets/js/16.5e29cd0e.js"><link rel="prefetch" href="/assets/js/17.eaad5bda.js"><link rel="prefetch" href="/assets/js/18.e9883757.js"><link rel="prefetch" href="/assets/js/19.db96bc47.js"><link rel="prefetch" href="/assets/js/20.65aa35ab.js"><link rel="prefetch" href="/assets/js/21.4a96d5ac.js"><link rel="prefetch" href="/assets/js/22.5856be51.js"><link rel="prefetch" href="/assets/js/23.871b6ede.js"><link rel="prefetch" href="/assets/js/24.34ae02f1.js"><link rel="prefetch" href="/assets/js/25.d4a717bf.js"><link rel="prefetch" href="/assets/js/26.010f9d7a.js"><link rel="prefetch" href="/assets/js/27.f25e6a3d.js"><link rel="prefetch" href="/assets/js/28.327a935b.js"><link rel="prefetch" href="/assets/js/29.fb5c02f3.js"><link rel="prefetch" href="/assets/js/3.c9359344.js"><link rel="prefetch" href="/assets/js/30.1650a5a8.js"><link rel="prefetch" href="/assets/js/31.e53af1d4.js"><link rel="prefetch" href="/assets/js/32.af4f4186.js"><link rel="prefetch" href="/assets/js/4.53d46fa3.js"><link rel="prefetch" href="/assets/js/5.d6904aa8.js"><link rel="prefetch" href="/assets/js/6.923b4c44.js"><link rel="prefetch" href="/assets/js/7.0a224fd6.js"><link rel="prefetch" href="/assets/js/8.3deeba19.js"><link rel="prefetch" href="/assets/js/9.8618018a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.dd0d74e3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">梁永琪的个人博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/vue/" class="nav-link">vue</a></div><div class="nav-item"><a href="/react/" class="nav-link">react</a></div><div class="nav-item"><a href="/kuayu/" class="nav-link router-link-active">跨域</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/npm.html" class="nav-link">npm</a></li><li class="dropdown-item"><!----> <a href="/git/" class="nav-link">git</a></li><li class="dropdown-item"><!----> <a href="/node/" class="nav-link">node</a></li><li class="dropdown-item"><!----> <a href="/vant/" class="nav-link">vant</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">js</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/js/" class="nav-link">js基础</a></li><li class="dropdown-item"><!----> <a href="/jsg/" class="nav-link">js高级</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/vue/" class="nav-link">vue</a></div><div class="nav-item"><a href="/react/" class="nav-link">react</a></div><div class="nav-item"><a href="/kuayu/" class="nav-link router-link-active">跨域</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/npm.html" class="nav-link">npm</a></li><li class="dropdown-item"><!----> <a href="/git/" class="nav-link">git</a></li><li class="dropdown-item"><!----> <a href="/node/" class="nav-link">node</a></li><li class="dropdown-item"><!----> <a href="/vant/" class="nav-link">vant</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">js</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/js/" class="nav-link">js基础</a></li><li class="dropdown-item"><!----> <a href="/jsg/" class="nav-link">js高级</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/kuayu/" class="sidebar-link">跨域</a></li><li><a href="/kuayu/kuayus.html" class="active sidebar-link">跨域的方法</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="跨域的方法"><a href="#跨域的方法" aria-hidden="true" class="header-anchor">#</a> 跨域的方法</h1> <ol><li>webpack配置跨域 创建vue.config.js文件<br> <code>vue.config.js</code>文件内容</li></ol> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  devServer<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+	  <span class="token comment">//这里的地址是你配置的后端接口</span>
+    proxy<span class="token punctuation">:</span> <span class="token string">'http://localhost:3000'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>在src的api文件中配置一个<code>index.js</code>文件</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> axios <span class="token keyword">from</span> <span class="token string">'axios'</span><span class="token punctuation">;</span>
+<span class="token comment">// 响应拦截器</span>
+<span class="token comment">// 公共请求地址</span>
+axios<span class="token punctuation">.</span>defaults<span class="token punctuation">.</span>baseURL <span class="token operator">=</span> <span class="token string">'http://localhost:3000'</span><span class="token punctuation">;</span>
+axios<span class="token punctuation">.</span>interceptors<span class="token punctuation">.</span>response<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=&gt;</span> res<span class="token punctuation">.</span>data<span class="token punctuation">,</span> <span class="token parameter">err</span> <span class="token operator">=&gt;</span> Promise<span class="token punctuation">.</span><span class="token function">reject</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 轮播图请求</span>
+<span class="token keyword">const</span> <span class="token function-variable function">getBaner</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/banner'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 首页列表请求hl</span>
+<span class="token comment">// 2 getHl执行 axios.get 就执行了 拿到结果 这个结果就是getHl的结果</span>
+<span class="token keyword">const</span> <span class="token function-variable function">getHl</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/hl'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token punctuation">{</span> getBaner<span class="token punctuation">,</span>getHl <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>在需要值得组件上接收一下这个跨域的json</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>home<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>loading<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>loadEffect<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-else</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span>
+// 把方法引入
+import { getBaner,getHl } from '../api'
+export default {
+  name: 'home',
+  async created() {
+    this.imgs = await getBaner();
+    this.list = await getHl();
+  },
+  data() {
+    return {
+      loading: true,
+      imgs: [],
+      list: [],
+    }
+  }
+}
+</code></pre></div><ol start="2"><li>cors 实现跨域
+<code>app.js</code>文件添加方法</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'express'</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> banner <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./banner.js'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// cors</span>
+<span class="token keyword">const</span> cors <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'koa-cors'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token function">cors</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token punctuation">{</span>
+    rfile
+<span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./ff.js'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/banner'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    res<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span>banner<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+app<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token number">3030</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'服务器启动成功'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ol start="3"><li>Node Express 解决请求跨域请求
+<code>index.js</code>文件</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> axios <span class="token keyword">from</span> <span class="token string">'axios'</span><span class="token punctuation">;</span>
+
+<span class="token comment">//添加一个请求地址,不需要再额外添加一个vue.config.js文件就可以实现跨域</span>
+axios<span class="token punctuation">.</span>defaults<span class="token punctuation">.</span>baseURL <span class="token operator">=</span> <span class="token string">'http://localhost:3030'</span><span class="token punctuation">;</span>
+
+axios<span class="token punctuation">.</span>interceptors<span class="token punctuation">.</span>response<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=&gt;</span> res<span class="token punctuation">.</span>data<span class="token punctuation">,</span> <span class="token parameter">err</span> <span class="token operator">=&gt;</span> Promise<span class="token punctuation">.</span><span class="token function">reject</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> <span class="token function-variable function">getBaner</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/banner'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token punctuation">{</span>
+    getBaner
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p><code>app.js</code>文件</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'express'</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> banner <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./banner.js'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// cors</span>
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 配置cors跨域头</span>
+  <span class="token comment">// 允许哪个域名跨域</span>
+  res<span class="token punctuation">.</span><span class="token function">header</span><span class="token punctuation">(</span><span class="token string">'Access-Control-Allow-Origin'</span><span class="token punctuation">,</span> <span class="token string">'*'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">// 允许什么方法进行跨域</span>
+  res<span class="token punctuation">.</span><span class="token function">header</span><span class="token punctuation">(</span><span class="token string">'Access-Control-Allow-Methods'</span><span class="token punctuation">,</span> <span class="token string">'GET,POST,DELETE,PUT'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// use里面如果不调用next，代码就不继续执行了</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span>
+    rfile
+<span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./ff.js'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/banner'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    res<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span>banner<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+app<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token number">3030</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'服务器启动成功'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/kuayu/" class="prev router-link-active">
+          跨域
+        </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.959a054e.js" defer></script><script src="/assets/js/2.ed44bfc9.js" defer></script><script src="/assets/js/15.83ca4402.js" defer></script>
+  </body>
+</html>
